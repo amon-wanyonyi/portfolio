@@ -1,0 +1,283 @@
+/* Landing page
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgb(236, 96, 225);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox']:checked~.bar {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+input[type='checkbox']:checked~.bar::before {
+    transform: rotate(-90deg);
+    top: 0;
+}
+
+input[type='checkbox']:checked~ul {
+    display: flex;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+header ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+header ul li a:hover::before,
+header ul li a:active::before {
+    width: 50%;
+}
+
+header ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.1s linear;
+}
+
+.bar {
+    position: relative;
+    top: 5px;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.bar::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+main {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/wa.jpg') no-repeat center center / cover;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-left: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+main h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: -30px;
+}
+
+.icons {
+    position: absolute;
+    top: 5vh;
+    left: 150px;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons a {
+    color: #fff;
+    font-size: 2.0rem;
+    margin-top: 10px;
+}
+
+.line1 {
+    width: 2px;
+    height: 30vh;
+    background-color: #fff;
+    position: absolute;
+    top: 10vh;
+    left: 150px;
+}
+
+.line2 {
+    width: 2px;
+    height: 30vh;
+    background-color: #fff;
+    position: absolute;
+    bottom: 10vh;
+    left: 150px;
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 50px;
+    }
+    .icons {
+        height: inherit;
+        width: inherit;
+        top: inherit;
+        left: inherit;
+        bottom: 10px;
+        right: 10px;
+    }
+    .line1,
+    .line2 {
+        display: none;
+    }
+    main {
+        padding-left: 5vw;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 20px 20px;
+    }
+    main h1 {
+        line-height: 1;
+        margin-bottom: 1rem;
+        font-size: 4rem;
+    }
+    main h2 {
+        font-size: 1.5rem;
+        margin-top: -15px;
+    }
+    header ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: calc(100vh - 55px);
+        top: 60px;
+        left: 0;
+        z-index: 100;
+        background-color: #fff;
+    }
+    header ul li {
+        margin: 1rem;
+    }
+    header ul li a {
+        color: #000;
+    }
+    header ul li a::before {
+        background-color: #000;
+    }
+    .bar {
+        display: block;
+    }
+}
+
+
+/* Landing page */
+
+
+/* About me */
+
+
+/* .about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/about.png') no-repeat center center / cover;
+    color: #fff;
+    padding: 0 3rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.about h1 {
+    background: rgb(236, 96, 225);
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin-bottom: 1rem;
+}
+
+img {
+    border-radius: 40%;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+/* portfolio */
+
+
+/* .portfolio .box-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/portfolio.jpg') no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img {
+    transform: scale(1.2);
+}  */
