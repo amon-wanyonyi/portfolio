@@ -230,8 +230,7 @@ main h2 {
 
 /* About me */
 
-
-/* .about {
+.about {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/about.png') no-repeat center center / cover;
     color: #fff;
     padding: 0 3rem;
