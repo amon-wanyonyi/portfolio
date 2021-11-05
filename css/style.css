@@ -1,4 +1,4 @@
-/* Landing page
+/* Landing page */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 * {
@@ -280,4 +280,4 @@ p {
 
 .portfolio .box-container .box:hover img {
     transform: scale(1.2);
-}  */
+}
