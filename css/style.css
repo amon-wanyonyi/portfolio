@@ -222,6 +222,9 @@ main h2 {
     .bar {
         display: block;
     }
+    .portfolio .box-container .box {
+        width: 100%;
+    }
 }
 
 
