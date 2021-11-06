@@ -289,7 +289,6 @@ p {
 }
 
 .contactMe {
-    /* background: rgb(148, 111, 145); */
     width: 80%;
     margin: 50px auto;
 }
@@ -309,4 +308,37 @@ p {
     flex-basis: 40%;
     padding: 40px;
     background: #1c00b5;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.contactMe p {
+    margin-bottom: 40px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
 }
