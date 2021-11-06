@@ -282,3 +282,31 @@ p {
 
 
 /* contact me */
+
+#contactMe {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/contact.png') no-repeat center center / cover;
+    color: #fff;
+}
+
+.contactMe {
+    /* background: rgb(148, 111, 145); */
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box {
+    background: #fff;
+    display: flex;
+}
+
+.contact-left {
+    color: #333;
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #1c00b5;
+}
