@@ -256,12 +256,16 @@ p {
     margin-bottom: 1rem;
 }
 
-.portfolio .box-container {
+.portfolio {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/portfolio.jpg') no-repeat center center / cover;
+}
+
+.portfolio .box-container {
+    color: #fff;
     display: flex;
     align-items: center;
-    margin-top: 0;
-    justify-content: center;
+    margin-top: 120px;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 2rem 0;
 }
@@ -271,6 +275,14 @@ p {
     color: #fff;
     font-size: 4rem;
     background: rgb(236, 96, 225);
+}
+
+.portfolio .box-container .box p a {
+    color: #fff;
+}
+
+.portfolio .box-container .box p a:hover {
+    color: rgb(236, 96, 225);
 }
 
 .portfolio .box-container .box img {
