@@ -223,6 +223,9 @@ main h2 {
     .portfolio .box-container .box {
         width: 100%;
     }
+    .input-row .column .input-group {
+        width: 100%;
+    }
 }
 
 .about {
@@ -310,11 +313,16 @@ p {
     background: #1c00b5;
 }
 
-h1 {
+#h1 {
+    background: rgb(236, 96, 225);
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 .contactMe p {
+    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -341,4 +349,43 @@ textarea {
     border: 1px solid #ccc;
     padding: 10px;
     box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+
+button {
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgb(236, 96, 225);
+}
+
+.contact-left h3 {
+    color: #1c00b5;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-right h3 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+tr td {
+    padding-top: 20px;
+}
+
+tr td:first-child {
+    padding-right: 20px;
 }
