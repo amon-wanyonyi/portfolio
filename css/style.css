@@ -13,6 +13,7 @@ section {
 }
 
 header {
+    overflow: hidden;
     background: rgb(236, 96, 225);
     position: absolute;
     top: 0;
@@ -23,6 +24,16 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+content {
+    padding-top: 60px;
 }
 
 input[type='checkbox'] {
